@@ -19,3 +19,4 @@ public:
         return longestSequence;
     }
 };
+//https://leetcode.com/problems/longest-consecutive-sequence/
