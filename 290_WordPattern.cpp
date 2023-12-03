@@ -33,3 +33,4 @@ public:
       return true;
     }
 };
+// https://leetcode.com/problems/word-pattern/description/
