@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int i = 0, j = 0;
+        while(j < nums.size()){
+            if(nums[i] == nums[j] ){
+                if(j - i > 1){
+                    nums.erase(nums.begin() + j);
+                }
+                else j++;
+            }
+            else if(nums[i] != nums[j]){
+                i = j;
+                j++;
+            }
+        }
+        return nums.size();
+    }
+};
+// 80. Remove Duplicates from Sorted Array II
